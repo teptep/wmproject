@@ -9,7 +9,6 @@ public class Lyrics_mxm {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 		try {
 			Connection c = null;
 			// Statement 5
@@ -23,7 +22,7 @@ public class Lyrics_mxm {
 			ResultSet rs_lyrics = stmt5
 					.executeQuery("SELECT track_id, mxm_tid, word, count, is_test FROM lyrics;");
 			//is_test specifies if example is from train set(0) or test set (1)
-			
+			System.out.println("Hana");
 			while (rs_lyrics.next()) {
 				// String artist_id = rs.getString("target");
 				// System.out.println( "ID = " + artist_id );
