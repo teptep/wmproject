@@ -15,10 +15,13 @@ package dws.itemrecommender;
  * 		Code written by Daniel Riad, Hanna Farag, Amina Kadry, Ümit Tepe
  * 
  * 		To-Do's:
- * 		- Comparison methods (like artist_ids with the most-frequent similar tags should be recommended
+ * 		- Comparison methods (like artist_0ids with the most-frequent similar tags should be recommended
+ * fggjhfhgfhg
  * 
+ * xxxxxx
  */
-
+//test git hub
+//Daniel Riad
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;

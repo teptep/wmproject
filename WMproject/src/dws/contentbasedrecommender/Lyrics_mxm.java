@@ -24,6 +24,7 @@ public class Lyrics_mxm {
 			//is_test specifies if example is from train set(0) or test set (1)
 			System.out.println("Hana");
 			while (rs_lyrics.next()) {
+				System.out.println("Test");
 				// String artist_id = rs.getString("target");
 				// System.out.println( "ID = " + artist_id );
 			}
