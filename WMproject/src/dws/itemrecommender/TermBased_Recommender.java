@@ -18,7 +18,7 @@ package dws.itemrecommender;
  * 		- Comparison methods (like artist_ids with the most-frequent similar tags should be recommended
  * 
  */
-
+//test git hub
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
