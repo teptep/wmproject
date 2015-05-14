@@ -30,11 +30,11 @@ import java.util.HashMap;
 public class TermBased_Recommender {
 
 	public static void main(String[] args) throws ClassNotFoundException {
-	
+
 		HashMap<String, ArrayList<String>> term_index = new HashMap<String, ArrayList<String>>();
 		HashMap<String, ArrayList<String>> artist_index = new HashMap<String, ArrayList<String>>();
 
-//		artist_mbtag dataset 
+		// artist_mbtag dataset
 		Connection c = null;
 		Statement stmt3 = null;
 		try {
@@ -129,20 +129,19 @@ public class TermBased_Recommender {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
+
 		System.out.println("term_index: ");
 		System.out.println(term_index.get("european"));
 		System.out.println("artist_index:");
 		System.out.println("ARSD1PL1187FB3BD81");
-		
-//		Output looks like:
-//		term_index: 
-//		[AR00B1I1187FB433EB, AR07MCL1187B9B2DCA, AR0B6OD1187B9ABED2, AR0G6AY1187B990CD8]
-//		artist_index:
-//		ARSD1PL1187FB3BD81
-		
-			
-		
+
+		// Output looks like:
+		// term_index:
+		// [AR00B1I1187FB433EB, AR07MCL1187B9B2DCA, AR0B6OD1187B9ABED2,
+		// AR0G6AY1187B990CD8]
+		// artist_index:
+		// ARSD1PL1187FB3BD81
+
 	}
 
 }
