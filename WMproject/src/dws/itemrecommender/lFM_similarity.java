@@ -44,16 +44,17 @@ public class lFM_similarity {
 
 			stmt3 = c.createStatement();
 			ResultSet rs_lFM_sim = stmt3
-					.executeQuery("SELECT tid, target FROM similars_src;");
+//					.executeQuery("SELECT tid, target FROM similars_src;");
+					.executeQuery("SELECT target FROM similars_src WHERE tid ='TRCCKNV128F149573B';");
 			while (rs_lFM_sim.next()) {
 				// String artist_id = rs.getString("target");
 				// System.out.println( "ID = " + artist_id );
-				String track_id = rs_lFM_sim.getString("tid");
+//				String track_id = rs_lFM_sim.getString("tid");
 				String similar_tracks = rs_lFM_sim.getString("target");
-
-				if (track_index.containsKey(track_id) != true) {
-					track_index.put(track_id, similar_tracks);
-				}
+				System.out.println(similar_tracks);
+//				if (track_index.containsKey(track_id) != true) {
+//					track_index.put(track_id, similar_tracks);
+//				}
 
 			}
 			rs_lFM_sim.close();
@@ -72,16 +73,18 @@ public class lFM_similarity {
 
 			stmt4 = c.createStatement();
 			ResultSet rs_lFM_rev_sim = stmt4
-					.executeQuery("SELECT tid, target FROM similars_dest;");
+//					.executeQuery("SELECT tid, target FROM similars_dest;");
+					.executeQuery("SELECT target FROM similars_dest WHERE tid= 'TRCCKNV128F149573B';");
+//			TRCCKNV128F149573B
 			while (rs_lFM_rev_sim.next()) {
 				// String artist_id = rs.getString("target");
 				// System.out.println( "ID = " + artist_id );
-				String track_id = rs_lFM_rev_sim.getString("tid");
+//				String track_id = rs_lFM_rev_sim.getString("tid");
 				String referencing_tracks = rs_lFM_rev_sim.getString("target");
-
-				if (reverse_track_index.containsKey(track_id) != true) {
-					reverse_track_index.put(track_id, referencing_tracks);
-				}
+				System.out.println(referencing_tracks);
+//				if (reverse_track_index.containsKey(track_id) != true) {
+//					reverse_track_index.put(track_id, referencing_tracks);
+//				}
 
 			}
 			rs_lFM_rev_sim.close();
